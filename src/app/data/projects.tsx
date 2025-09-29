@@ -17,14 +17,14 @@ export const projects: ProjectCardProps[] = [
     image: "/click&cook.jpg",
     githubFrontUrl: "https://github.com/Edwige08/click_and_cook_front",
     githubBackUrl: "https://github.com/rchouhani/click_and_cook_back",
-    deployUrl: "", // Déploiement à voir avec Edwige pour le front
+    deployUrl: "https://click-and-cook.vercel.app/",
   },
   {
     name: "Adaopte",
     image: "/adaopte.jpg",
     githubBackUrl: "https://github.com/rchouhani/adaopte_back_tsx",
     githubFrontUrl: "https://github.com/fatydm/adaopte_front-tsx",
-    deployUrl: "",
+    deployUrl: "https://adaopte-rofated.vercel.app/",
   },
   {
     name: "Surfin' Safari",
