@@ -1,12 +1,12 @@
 import { ProjectCardProps } from "../needs/ProjectCardProps";
 
 export const projects: ProjectCardProps[] = [
-  {
-    name: "PTEN Officiel",
-    image: "/pten.jpg",
-    githubUrl: "https://github.com/rchouhani/ptenofficiel",
-    deployUrl: "",
-  },
+  // {
+  //   name: "PTEN Officiel",
+  //   image: "/pten.jpg",
+  //   githubUrl: "https://github.com/rchouhani/ptenofficiel",
+  //   deployUrl: "",
+  // },
   {
     name: "ZeDeN",
     image: "/zeden.jpg",
@@ -32,10 +32,10 @@ export const projects: ProjectCardProps[] = [
     githubUrl: "https://github.com/adatechschool/projet-front-end-conception-de-base-de-donn-es-rchouhani", // deploiement après changement de thème ( vélo )
     deployUrl: "",
   },
-  {
-    name: "Global Fooder",
-    image: "/globalfooder.png",
-    githubUrl:"https://github.com/rchouhani/dataviz_project", // deploiement possible
-    deployUrl: "",
-  },
+  // {
+  //   name: "Global Fooder",
+  //   image: "/globalfooder.png",
+  //   githubUrl:"https://github.com/rchouhani/dataviz_project", // deploiement possible
+  //   deployUrl: "",
+  // },
 ];
