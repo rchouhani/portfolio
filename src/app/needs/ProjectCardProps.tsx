@@ -1,7 +1,7 @@
 export type ProjectCardProps = {
     name: string;
     image: string;
-    projectUrl?: string; // explication pour les détails des projets.
+    detailsProject: string;
     githubUrl?: string;
     githubFrontUrl?: string;
     githubBackUrl?: string;
