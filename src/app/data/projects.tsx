@@ -15,8 +15,12 @@ export const projects: ProjectCardProps[] = [
     deployUrl: "https://click-and-cook.vercel.app/",
     slug: "click-and-cook",
     stack: ["Next.js", "Django", "PostgreSQL", "BDD Neon"],
-    learning: "Gérer la communication front/back",
-    improvements: "Améliorer l’UI et ajouter l’authentification",
+    learning: `    Expérience concrète d’utilisation de Notion pour organiser les tâches, suivre l’avancement et centraliser les informations.
+    Mise en place de stand-ups et d’objectifs quotidiens clairs.
+    Utilisation d'un support pour visualiser les priorités et planifier les journées.
+    Définition claire des tâches individuelles pour nous permettre d'avancer sans blocage.
+    Avoir une meilleure priorisation des tâches.
+    Savoir se concentrer sur la qualité des features plutôt que la quantité.`,
   },
   {
     name: "Adaopte",
@@ -26,46 +30,22 @@ export const projects: ProjectCardProps[] = [
     deployUrl: "https://adaopte-rofated.vercel.app/",
     slug: "adaopte",
     stack: ["Next.js", "Django", "PostgreSQL", "BDD Neon"],
-    learning: `2️⃣ Apprentissages positifs que tu peux en tirer
-
-Maîtrise d’un custom user model
-
-Tu comprends profondément comment fonctionne l’authentification dans Django.
-
-Tu es capable de personnaliser les modèles standards pour répondre à un besoin métier.
-
-Sécurité et bonnes pratiques JWT
-
-Compréhension de la sécurité côté frontend et backend.
-
-Gestion des cookies sécurisés, httpOnly, sameSite, et des refresh tokens.
-
-Expérience concrète de protection des données utilisateur.
-
-Intégration frontend/backend
-
-Coordination entre Next.js (TS) et Django REST API.
-
-Typage et validation d’API, gestion des erreurs et des états d’authentification.
-
-Compréhension du flux complet de login -> token -> accès aux routes protégées.
-
-Déploiement et production
-
-Gestion des variables d’environnement et secrets.
-
-Résolution de problèmes liés à CORS, HTTPS et différences dev/prod.
-
-Expérience réelle de mise en production sur Vercel.
-
-UX et logique métier
-
-Gestion des pages accessibles seulement si connecté.
-
-Validation côté frontend pour améliorer l’expérience utilisateur.
-
-Mise en place de redirections et feedbacks utilisateurs clairs.`,
-    improvements: "Améliorer l’UI et ajouter l’authentification",
+    learning: `Compréhension du fonctionnement de l’authentification dans Django.
+    Maîtrise d’un custom user model
+    Personnalisation des modèles standards pour répondre à un besoin métier.
+    Sécurité et bonnes pratiques JWT.
+    Compréhension de la sécurité côté frontend et backend.
+    Gestion des cookies sécurisés, httpOnly, sameSite, et des refresh tokens.
+    Expérience concrète de protection des données utilisateur.
+    Intégration frontend/backend
+    Typage et validation d’API, gestion des erreurs et des états d’authentification.
+    Compréhension du flux complet de login -> token -> accès aux routes protégées.
+    Déploiement et production
+    Gestion des variables d’environnement et secrets.
+    Résolution de problèmes liés à CORS, HTTPS et différences dev/prod.
+    Expérience réelle de mise en production sur Vercel.
+    Gestion des pages accessibles seulement si connecté.
+    Mise en place de redirections et feedbacks utilisateurs clairs.`,
   },
   {
     name: "Surfin' Safari",
@@ -75,7 +55,9 @@ Mise en place de redirections et feedbacks utilisateurs clairs.`,
     deployUrl: "",
     slug: "surfin-safari",
     stack: ["Next.js", "Express", "Prisma", "PostgreSQL", "BDD Neon"],
-    learning: "Gérer la communication front/back",
-    improvements: "Améliorer l’UI et ajouter l’authentification",
+    learning: `    Clean Code pour avoir une fonction, un fichier réutilisable
+    Compréhension fine du cycle de vie d’un contexte React et de l’importance du loading pour différer les actions jusqu’à ce que l’état soit stabilisé.
+    Maîtrise du pattern useAuth avec contexte pour centraliser l’état de l’utilisateur.
+    Expérience pratique sur la sécurité côté front et back, notamment comment protéger les routes en Next.js avec JWT et cookies.`,
   },
 ];
