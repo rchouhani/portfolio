@@ -28,12 +28,13 @@ export default function ProjectCard({
     const handleClick = () => {
       window.open(url, "_blank");
     };
+
     return (
       <button
         onClick={handleClick}
         title={ariaLabel}
         aria-label={ariaLabel}
-        className={`transition hover:opacity-80 cursor-pointer pointer-events-auto ${
+        className={`transition hover:opacity-80 cursor-pointer ${
           isBack ? "text-blue-700" : "text-white"
         }`}
       >
@@ -42,76 +43,79 @@ export default function ProjectCard({
     );
   }
 
-  const imageElement = (
-    <Image
-      src={image || "/placeholder.png"}
-      alt={name}
-      width={600}
-      height={400}
-      className="object-cover w-full h-full transition-transform duration-500 rounded-lg cursor-pointer"
-    />
-  );
-
   return (
-    <div className="relative group border-2 border-yellow-500 h-96 w-72 rounded-lg mt-30 mb-30 mx-20 bg-gray-800">
+    <div className="relative border-2 border-yellow-500 h-96 w-72 rounded-lg mt-30 mb-30 mx-20 bg-gray-800 hover:scale-105 transition-transform duration-300">
+      {/* Image cliquable */}
       {slug ? (
-        <Link 
-        href={`/projects/${slug}`} 
-        className="block w-full h-full"
+        <Link
+          href={`/projects/${slug}`}
+          title={`Voir le projet ${name}`}
+          aria-label={`Voir le projet ${name}`}
+          className="block w-full h-full"
         >
-          {imageElement}
+          <Image
+            src={image || "/placeholder.png"}
+            alt={name}
+            width={600}
+            height={400}
+            className="object-cover w-full h-full rounded-lg"
+          />
         </Link>
       ) : (
-        <div className="block w-full h-full">{imageElement}</div>
+        <div className="block w-full h-full">
+          <Image
+            src={image || "/placeholder.png"}
+            alt={name}
+            width={600}
+            height={400}
+            className="object-cover w-full h-full rounded-lg"
+          />
+        </div>
       )}
 
-      <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col items-center justify-center gap-4 pointer-events-none group-hover:pointer-events-auto">
-        <h3 className="text-white text-xl font-semibold">{name}</h3>
-
-        <div className="flex gap-6">
-          {githubUrl && (
-            <Link
-              href={githubUrl || "#"}
-              target="_blank"
-              title="Voir le repository Git Hub"
-              aria-label="Voir le repository Git Hub"
-              className="text-white hover:text-gray-300 transition cursor-pointer pointer-events-auto"
-            >
-              <Github size={28} />
-            </Link>
-          )}
-
-          <GithubButton
-            url={githubFrontUrl}
-            isBack={false}
-            ariaLabel="Voir le repository Front"
-          />
-          <GithubButton
-            url={githubBackUrl}
-            isBack={true}
-            ariaLabel="Voir le repository Back"
-          />
-
-          {deployUrl && (
-            <Link
-              href={deployUrl}
-              target="_blank"
-              title="Voir le site déployer sur Vercel"
-              aria-label="Voir le site déployer sur Vercel"
-              className="text-white hover:text-gray-300 transition cursor-pointer pointer-events-auto"
-            >
-              <ExternalLink size={28} />
-            </Link>
-          )}
+      {/* Footer avec liens */}
+      <div className="absolute bottom-4 left-0 w-full flex justify-center gap-4 bg-black/60 p-6">
+        {githubUrl && (
           <Link
-            href="#"
+            href={githubUrl}
+            target="_blank"
+            title="Voir le repository GitHub"
+            aria-label="Voir le repository GitHub"
+            className="text-white hover:text-gray-300 transition"
+          >
+            <Github size={28} />
+          </Link>
+        )}
+
+        <GithubButton url={githubFrontUrl} isBack={false} ariaLabel="Voir le repository Front" />
+        <GithubButton url={githubBackUrl} isBack={true} ariaLabel="Voir le repository Back" />
+
+        {deployUrl && (
+          <Link
+            href={deployUrl}
+            target="_blank"
+            title="Voir le site déployé"
+            aria-label="Voir le site déployé"
+            className="text-white hover:text-gray-300 transition"
+          >
+            <ExternalLink size={28} />
+          </Link>
+        )}
+
+        {slug ? (
+          <Link
+            href={`/projects/${slug}`}
             title="Voir les détails du projet"
             aria-label="Voir les détails du projet"
-            className="cursor-pointer"
+            className="text-white hover:text-gray-300 transition"
           >
             <Info size={28} />
           </Link>
-        </div>
+        ) : (
+          <span className="text-gray-500 cursor-not-allowed" title="Page non disponible">
+            <Info size={28} />
+          </span>
+        )}
       </div>
     </div>
   );
