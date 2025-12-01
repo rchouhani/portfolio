@@ -19,7 +19,7 @@ export default function Navbar() {
     { label: "Projets", href: "/home", icon: <Projector size={28} className ="w-7 h-7 md:w-12 md:h-12"/> },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/romain-chouhani-334b1586/", icon: <Linkedin size={28} className ="w-7 h-7 md:w-12 md:h-12"/>, external: true },
     { label: "GitHub", href: "https://github.com/rchouhani", icon: <Github size={28} className ="w-7 h-7 md:w-12 md:h-12"/>, external: true },
-    { label: "À propos", href: "/#about", icon: <Info size={28} className ="w-7 h-7 md:w-12 md:h-12"/> },
+    { label: "À propos", href: "/", icon: <Info size={28} className ="w-7 h-7 md:w-12 md:h-12"/> },
     { label: "Mail", mailto: "rchouhani@me.com", icon: <AtSign size={28} className ="w-7 h-7 md:w-12 md:h-12" />, external: true },
   ];
 
