@@ -44,8 +44,10 @@ export default function ProjectCard({
   }
 
   return (
-    <div className="relative border-2 border-yellow-500 h-96 w-72 rounded-lg mt-30 mb-30 mx-20 bg-gray-800 hover:scale-105 transition-transform duration-300">
-      {/* Image cliquable */}
+<div className="relative border-2 border-yellow-500 rounded-lg mt-10 mb-10 mx-5 
+                w-72 sm:w-80 md:w-96 
+                h-96 sm:h-[28rem] md:h-[32rem] 
+                bg-gray-800 hover:scale-105 transition-transform duration-300">      {/* Image cliquable */}
       {slug ? (
         <Link
           href={`/projects/${slug}`}
