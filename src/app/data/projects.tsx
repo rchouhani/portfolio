@@ -6,8 +6,8 @@ export const projects: ProjectCardProps[] = [
     image: "/zeden.jpg",
     deployUrl: "https://www.zeden.net/",
     slug: "zeden",
-    learning: ` Pour le moment, en Septembre 2025, j'apprends à connecter une machine hôte à une image virtuelle.
-    A ppréhender les différets concepts concernant la communication entre les deux machines.
+    learning: ` Pour le moment, en Septembre 2025, j'apprends à connecter une machine hôte à une machine virtuelle.
+    A appréhender les différents concepts concernant la communication entre les deux machines.
     Vérifier et modifier les droits d'écriture, de lecture et de modification d'un fichier
     La gestion d'ouverture des ports ainsi que les redirections éventuelles
     Les différents protocoles de communication comme UDP, TCP
