@@ -57,7 +57,7 @@ export const projects: ProjectCardProps[] = [
     name: "Surfin' Safari",
     image: "/surfinsafari.jpg",
     githubUrl:
-      "https://github.com/adatechschool/projet-front-end-conception-de-base-de-donn-es-rchouhani", // deploiement après changement de thème ( vélo )
+      "https://github.com/adatechschool/projet-mobile-surf-rchouhani",
     deployUrl: "",
     slug: "surfin-safari",
     stack: ["Next.js", "Express", "Prisma", "PostgreSQL", "BDD Neon"],
