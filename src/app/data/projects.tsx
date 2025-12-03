@@ -66,4 +66,27 @@ export const projects: ProjectCardProps[] = [
     Maîtrise du pattern useAuth avec contexte pour centraliser l’état de l’utilisateur.
     Expérience pratique sur la sécurité côté front et back, notamment comment protéger les routes en Next.js avec JWT et cookies.`,
   },
+  // {
+  //   name: "Genealogy 3D",
+  //   image: "",
+  //   githubUrl:
+  //     "https://github.com/rchouhani/rchouhani-genealogy-three-d",
+  //   deployUrl: "",
+  //   slug: "genealogy-3d",
+  //   stack: ["Next.js", "Typescript", "Tailwind", "ThreeJS", "PostgreSQL", "BDD Supabase"],
+  //   learning: ` La gestion d'un scène 3d avec la librairie Three JS
+  //   La gestion de donnée complexe avec les différentes générations et les personnes de références
+  //   La gestion des différents états d'une variable qui passe d'un composant à un autre`,
+  // },
+  //   {
+  //   name: "Bike Arena",
+  //   image: "",
+  //   githubUrl:
+  //     "https://github.com/rchouhani/bikeArena",
+  //   deployUrl: "",
+  //   slug: "bike-arena",
+  //   stack: ["Next.js", "React Native", "Typescript", "Styles JS", "Expo", "PostgreSQL", "BDD Supabase"],
+  //   learning: ` Appréhender un nouveau langage, orienté mobile avec de nouvelles fonctionnalités comme le tactile par exemple
+  //   `,
+  // },
 ];
