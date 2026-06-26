@@ -6,12 +6,13 @@ export const projects: ProjectCardProps[] = [
     image: "/zeden.jpg",
     deployUrl: "https://www.zeden.net/",
     slug: "zeden",
-    learning: ` Pour le moment, en Septembre 2025, j'apprends à connecter une machine hôte à une machine virtuelle.
+    learning: ` Membre depuis Octobre 2024, j'apprends à connecter une machine hôte à une machine virtuelle.
     A appréhender les différents concepts concernant la communication entre les deux machines.
     Vérifier et modifier les droits d'écriture, de lecture et de modification d'un fichier
     La gestion d'ouverture des ports ainsi que les redirections éventuelles
     Les différents protocoles de communication comme UDP, TCP
-    La mise en place d'un fichier de configuration Apache ainsi que sa mise en route`
+    La mise en place d'un fichier de configuration Apache ainsi que sa mise en route
+    Le correctif de bug au quotidien afin de consolider l'existant`,
   },
   {
     name: "Click & Cook",
@@ -56,8 +57,7 @@ export const projects: ProjectCardProps[] = [
   {
     name: "Surfin' Safari",
     image: "/surfinsafari.jpg",
-    githubUrl:
-      "https://github.com/adatechschool/projet-mobile-surf-rchouhani",
+    githubUrl: "https://github.com/adatechschool/projet-mobile-surf-rchouhani",
     deployUrl: "",
     slug: "surfin-safari",
     stack: ["Next.js", "Express", "Prisma", "PostgreSQL", "BDD Neon"],
@@ -89,4 +89,27 @@ export const projects: ProjectCardProps[] = [
   //   learning: ` Appréhender un nouveau langage, orienté mobile avec de nouvelles fonctionnalités comme le tactile par exemple
   //   `,
   // },
+    {
+    name: "Dog and Tof",
+    image: "/dogandtof.png",
+    githubUrl:
+      "https://github.com/rchouhani/dogAndTof",
+    deployUrl: "https://www.dogandtof.fr/",
+    slug: "dog-and-tof",
+    stack: ["HTML", "CSS"],
+    learning: `L'objectif principal de ce projet n'était pas le code mais comprendre le besoin client pour un site vitrine simple et efficace. 
+    Le but premier étant d'avoir une visibilité sur le web en relai des réseaux sociaux. J'ai fait le déploiement sur OVH par connaissance. 
+    J'ai pu y voir une manière totalement différente de déployer que sur Vercel, qui est un hébergeur serverless principalement. 
+    La formule que j'avais préconisé à mon client ne prenait en compte que le HTML, CSS et ne pouvait héberger d'application Node JS ou Next JS, ce avec quoi je travaille habituellement.
+    Je n'ai vu cette spécificité qu'à la fin de mon développement, ce qui m'a donné un petit coup de stress. J'ai donc modifié mon approche et ai cherché d'abord une solution adapté pour le déploiement en fonction de la techno que j'utilise.`,
+  },
+  {
+     name: "flm-consult",
+     image: "/flm-consult.webp",
+     githubUrl: "https://github.com/rchouhani/flm-consult",
+     deployUrl: "https://flm-consult.vercel.app",
+     slug: "flm-consult",
+     stack: ["ReactJS", "NextJS", "Typescript", "Javascript", "CSS"],
+     learning: `J'ai eu la chance d'être recommandé auprès de cette société naissante afin de réaliser son site vitrine et rendre son expertise présente sur le web. Après avoir penser le design du site, je me suis attelé à organiser l'architecture du site afin de me faire gagner du temps sur l'implémentation du contenu. J'ai ensuite pu me concnentrer sur la compréhension des besoins du client et de ce qui est important pour lui, de la visite du client à l'acte d'achat. D'autres aspects plus légaux se sont aussi révélés. En effet, la règlementation sur l'accessibilité des sites internet doit être pris en compte ainsi que toutes les obligations telles que : - La conformité RGPD - L'accessibilité du site - L'affichage de CGU - l'affichage des CGV -  L'hébergement - L'affichage des mentions légales (SIRET, RCS, Numéro de TVA, Siège social, Capital social, Forme juridique, Dénomination sociale)`,
+   },
 ];
