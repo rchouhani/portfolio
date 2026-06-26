@@ -2,11 +2,11 @@ import { projects } from "@/app/data/projects";
 import Image from "next/image";
 
 interface ProjectPageProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
-  const { slug } = params;
+  const { slug } = await params;
 
   const project = projects.find((p) => p.slug === slug);
 
