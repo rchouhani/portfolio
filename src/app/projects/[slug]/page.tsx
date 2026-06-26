@@ -1,4 +1,3 @@
-import Navbar from "@/app/components/Navbar";
 import { projects } from "@/app/data/projects";
 import Image from "next/image";
 
