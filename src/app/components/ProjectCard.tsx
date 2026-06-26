@@ -45,8 +45,8 @@ export default function ProjectCard({
 
   return (
 <div className="relative border-2 border-yellow-500 rounded-lg mt-10 mb-10 mx-5 
-                w-72 sm:w-80 md:w-96 
-                h-96 sm:h-[28rem] md:h-[32rem] 
+                w-full
+                h-48 sm:h-[14rem] md:h-[16rem] 
                 bg-gray-800 hover:scale-105 transition-transform duration-300">      {/* Image cliquable */}
       {slug ? (
         <Link
@@ -60,7 +60,7 @@ export default function ProjectCard({
             alt={name}
             width={600}
             height={400}
-            className="object-cover w-full h-full rounded-lg"
+            className="object-cover object-top w-full h-full rounded-lg"
           />
         </Link>
       ) : (
@@ -70,7 +70,7 @@ export default function ProjectCard({
             alt={name}
             width={600}
             height={400}
-            className="object-cover w-full h-full rounded-lg"
+            className="object-cover object-top w-full h-full rounded-lg"
           />
         </div>
       )}
